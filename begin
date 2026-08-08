@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#jp2a --colors --fill ~/Downloads/medit67691.jpg && echo "SELECT: [1]i3[2]jwm[3]vxwm" &
+jp2a --colors --color-depth=12 --fill --width=170 ~/Downloads/shrom.jpg && echo "SELECT: [1]i3[2]jwm[3]vxwm" &
+read choice
+
+case "$choice" in
+    1) startx /home/benny/.xinitrc-i3
+    ;;
+    2) startx /home/benny/.xinitrc-jwm
+    ;;
+    3) startx /home/benny/.xinitrc-vxwm
+    ;;
+esac
