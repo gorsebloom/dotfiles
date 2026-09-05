@@ -79,7 +79,7 @@
 
         <TaskList maxwidth="256"/>
 
-        <Swallow width="32" height="32" name="xclock">cairo-clock</Swallow>
+        <Swallow width="32" height="32" name="xclock">cairo-clock --theme antique --xposition 30 --yposition 650 --width 300 --height 300</Swallow>
  	<Swallow width="32" height="32" name="xload">xload -nolabel -update 1</Swallow>
         <Dock/>
         <Clock format="%l:%M %p"><Button mask="123">exec:xclock</Button></Clock>
